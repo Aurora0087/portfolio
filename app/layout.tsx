@@ -1,15 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Kavivanar } from 'next/font/google'
 import "./globals.css";
+import LenisSmoothScroll from "@/components/LenisSmoothScroll";
+import Header from "@/components/header/Header";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const inter = Kavivanar({
+  weight: '400'
 });
 
 export const metadata: Metadata = {
@@ -25,9 +21,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.className} antialiased overflow-x-hidden`}
       >
-        {children}
+        <LenisSmoothScroll>
+          <Header />
+          {children}
+        </LenisSmoothScroll>
       </body>
     </html>
   );
