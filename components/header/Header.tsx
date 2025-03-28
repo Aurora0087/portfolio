@@ -6,6 +6,7 @@ import Button from "./Button"
 import { AnimatePresence, motion } from 'framer-motion';
 import Nav from "./Nav";
 import Link from "next/link";
+import Image from "next/image";
 
 const menu = {
     open: {
@@ -31,8 +32,8 @@ function Header() {
     return (
         <div className=" fixed w-screen px-4 top-4 flex justify-between z-[9999]">
             <div className=" text-black mix-blend-difference">
-                <Link href="/">
-                    D---R
+                <Link href="/" className=" h-12 w-12 relative grid place-content-center">
+                    <Image src="/logo.svg" alt="D---R" width={50} height={50} className=" w-full h-full" />
                 </Link>
             </div>
             <div className=" relative">

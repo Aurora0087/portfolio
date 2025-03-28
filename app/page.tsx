@@ -32,13 +32,15 @@ export default function Home() {
   }, []);
 
   return (
-    <div className={`min-h-screen px-4 transition-all ${bgChange ? 'bg-black text-white' : 'bg-white'}`}>
-      <Hero />
-      <About />
-      <div ref={bgChangeRef}>
-        <Work />
-        <Contact />
+    <div className="min-h-screen">
+      <div className={`transition-all px-4 ${bgChange ? 'bg-black text-white' : 'bg-white'}`}>
+        <Hero />
+        <About />
+        <div ref={bgChangeRef}>
+          <Work />
+        </div>
       </div>
+      <Contact />
     </div>
   );
 }

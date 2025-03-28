@@ -17,7 +17,7 @@ const projects = [
         siteUrl: '',
     },
     {
-        title: "C2 Montreal",
+        title: "Editify reCreate",
         type: "Web Design",
         src: "i1.jpeg",
         color: "#45FFCA",

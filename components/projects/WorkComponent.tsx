@@ -28,8 +28,8 @@ function WorkComponent({ title, details, imgSrc, siteUrl, flowRev = false }: { t
                     ease: "none",
                     scrollTrigger: {
                         trigger: scrollRef.current,
-                        start: "top 5%", // When `scrollRef`'s top hits the top of the viewport
-                        end: "bottom 5%", // When `scrollRef`'s bottom hits the top
+                        start: "top 10%", // When `scrollRef`'s top hits the top of the viewport
+                        end: "bottom 10%", // When `scrollRef`'s bottom hits the top
                         scrub: true, // Smoothly animates as you scroll
                     },
                 }
@@ -44,8 +44,8 @@ function WorkComponent({ title, details, imgSrc, siteUrl, flowRev = false }: { t
                     ease: "none",
                     scrollTrigger: {
                         trigger: scrollRef.current,
-                        start: "top 5%", // When `scrollRef`'s top hits the top of the viewport
-                        end: "bottom 5%", // When `scrollRef`'s bottom hits the top
+                        start: "top 10%", // When `scrollRef`'s top hits the top of the viewport
+                        end: "bottom 10%", // When `scrollRef`'s bottom hits the top
                         scrub: true, // Smoothly animates as you scroll
                     },
                 }
@@ -54,7 +54,7 @@ function WorkComponent({ title, details, imgSrc, siteUrl, flowRev = false }: { t
     }, []);
 
     return (
-        <div ref={scrollRef} className={`flex flex-col md:flex-row justify-between gap-4 items-end relative border-b p-4 px-8 border-black ${flowRev && 'md:flex-row-reverse'}`}>
+        <div ref={scrollRef} className={` relative flex flex-col md:flex-row justify-between gap-4 items-end border-b p-4 px-8 border-black ${flowRev && 'md:flex-row-reverse'}`}>
             <div
                 ref={imgBoxRef}
                 className=" relative h-full w-full rounded-2xl overflow-hidden"

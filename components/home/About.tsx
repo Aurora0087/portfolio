@@ -7,7 +7,7 @@ import React from 'react'
 
 function About() {
     return (
-        <div className='min-h-[50vh] py-16 mt-40 flex gap-8 md:gap-16'>
+        <div className=' py-16 mt-40 flex gap-8 md:gap-16'>
             <div className='p-1'>
                 01
             </div>
@@ -51,7 +51,7 @@ function About() {
                             transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1] }
                         }}
                     >
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium repellat quaerat magni eligendi fugiat similique dignissimos officia. Excepturi magnam alias repudiandae quibusdam iusto laborum quidem.
+                        Hello there - i'm deb, an full stack web dev hopping across digital and physical worlds. Currently creating impactful digital experiences.
                     </motion.p>
                 </div>
             </div>
