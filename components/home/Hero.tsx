@@ -20,7 +20,7 @@ function Hero() {
                                 transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1] }
                             }}
                         >
-                            Xyz
+                            Deb
                         </motion.p>
                     </div>
                     <motion.h2
@@ -49,7 +49,7 @@ function Hero() {
                             transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1] }
                         }}
                     >
-                        Ghkbsicmn.
+                        Rajbanshi.
                     </motion.p>
                 </div>
             </div>

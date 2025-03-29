@@ -103,10 +103,10 @@ function page() {
                             }}
                             className=" p-4 border-b border-black w-full h-[33vh] text-left text-6xl flex flex-col justify-center">
                             <h1 className="">
-                                Xyz
+                                Deb
                             </h1>
                             <h1 className="">
-                                qwertyuio.
+                                Rajbanshi.
                             </h1>
                         </motion.div>
                         <div className=" p-4 text-left grid grid-cols-[1fr_2fr]">
